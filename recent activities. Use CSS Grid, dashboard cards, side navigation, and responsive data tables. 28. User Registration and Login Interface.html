@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration and Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: lightblue;
+            margin: 0;
+            padding: 20px;
+        }
+
+      .rk1 {
+            background-color: navy;
+            color: white;
+        text-align: center;
+            padding: 20px;
+        }
+
+        .rk2 {
+            background-color: white;
+            max-width: 400px;
+            margin: 25px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        .rk3 {
+            color: navy;
+            text-align: center;
+        }
+
+        .rk4 {            display: block;
+            margin-top: 12px;
+            margin-bottom: 5px;
+        }
+
+        .rk5 {
+            width: 95%;
+            padding: 10px;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+        .rk5:focus {
+            outline: 2px solid blue;
+            border-color: blue;
+        }
+.rk6 {
+            width: 100%;
+            background-color: navy;
+        color: white;
+            padding: 12px;
+            margin-top: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;}
+
+        .rk6:hover {
+            background-color: teal;
+        }
+
+        .rk7 {
+            color: blue;
+            text-decoration: none;
+        }
+
+        .rk7:hover {
+            text-decoration: underline;
+        }
+
+        .rk8 {
+            color: red;
+            font-size: 13px;
+        }
+
+        .rk9 {
+            text-align: center;
+         background-color: rgb(43, 20, 222);
+            color: rgb(249, 249, 249);
+            padding: 12px;}
+    </style>
+</head>
+
+<body>
+
+    <header class="rk1">
+        <h1>User Account Portal</h1>
+        <p>Register and Login and Manage Your Profile</p>
+    </header>
+
+    <main>
+
+        <section class="rk2">
+            <h2 class="rk3">Registration</h2>
+
+            <form>
+                <label class="rk4" for="name">Full Name</label>
+                <input class="rk5" type="text" id="name"
+             name="name" required minlength="3">
+
+               <label class="rk4" for="email">Email</label>
+                <input class="rk5" type="email" id="email"
+                name="email" required>
+
+             <label class="rk4" for="pass">Password</label>
+                <input class="rk5" type="password" id="pass"
+               name="pass" required minlength="8">
+
+                <label class="rk4" for="confirm">Confirm Password</label>
+            <input class="rk5" type="password" id="confirm"
+                name="confirm" required minlength="8">
+
+                <button class="rk6" type="submit">Register</button>
+</form>
+</section>
+<section class="rk2">
+            <h2 class="rk3">Login</h2>
+            <form>
+                <label class="rk4" for="lemail">Email</label>
+                <input class="rk5" type="email" id="lemail"
+                name="lemail" required>
+
+                <label class="rk4" for="lpass">Password</label>
+                <input class="rk5" type="password" id="lpass"
+                name="lpass" required>
+                <button class="rk6" type="submit">Login</button>
+             <p><a class="rk7" href="#recover">
+                Forgot Password?</a></p>
+            </form>
+        </section>
+
+        <section class="rk2" id="recover">
+            <h2 class="rk3">Password Recovery</h2>
+
+            <form>
+                <label class="rk4" for="remail">Registered Email</label>              <input class="rk5" type="email" id="remail"
+                name="remail" required>
+
+                <button class="rk6" type="submit">
+                    Recover Password
+                </button>
+            </form> </section>
+
+ <section class="rk2" id="profile">
+            <h2 class="rk3">Profile Setup</h2>
+
+            <form>
+                <label class="rk4" for="pname">Display Name</label>
+                <input class="rk5" type="text" id="pname"
+                name="pname" required>
+
+                <label class="rk4" for="phone">Phone Number</label>
+                <input class="rk5" type="tel" id="phone"
+                name="phone" pattern="[0-9]{10}"
+                title="Enter a 10-digit phone number">
+
+               <label class="rk4" for="bio">About Me</label>
+                <textarea class="rk5" id="bio"
+            name="bio" rows="3"></textarea>
+
+           <button class="rk6" type="submit">
+                     Save Profile
+               </button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="rk9">
+        <p>©User Account Portal ----- 2026</p>
+    </footer>
+
+</body>
+</html>
